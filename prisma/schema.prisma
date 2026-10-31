@@ -9,7 +9,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
+model Planta {
   id            Int           @id @default(autoincrement())
   nome          String
   especie       String
