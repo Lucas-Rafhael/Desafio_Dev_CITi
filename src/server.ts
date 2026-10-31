@@ -7,7 +7,6 @@ const app = express();
 app.use(express.json());
 app.use(routes);
 
-// Qualquer rota que não existe cai aqui
 app.use((req, res) => {
   res.status(404).json({ message: "Rota não encontrada" });
 });
@@ -15,5 +14,5 @@ app.use((req, res) => {
 const port = process.env.SERVER_PORT || 3001;
 
 app.listen(port, () => {
-  console.log(`🚀 Server running on port ${port}`);
+  console.log(`Server rodando na porta ${port} 💚`);
 });
