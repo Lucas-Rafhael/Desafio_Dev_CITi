@@ -5,10 +5,10 @@ const prisma = new PrismaClient();
 prisma
   .$connect()
   .then(() => {
-    console.log("📦 Successfully connected with database");
+    console.log("Sucesso em conectar com a base de dados 💚");
   })
   .catch((error) => {
-    console.log("❌ Error connecting to database", error);
+    console.log("Error em conectar com a base de dados ❌", error);
   });
 
 export default prisma;
